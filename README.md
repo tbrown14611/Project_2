@@ -59,34 +59,39 @@ How closely correlated are exchange rates and GNP for a country?
 
 ## Analysis Approach
 
-The analysis was broken into multiple steps.
+The analysis was broken into multiple steps with a jupyter notebook for each step.
 
 
-step1_build_base_data.ipynb
+jupyter notebook: step1_build_base_data.ipynb
+- Us Treasury and World bank data, downloaded and saved as .csv files in project Resources are input to Step1
+- Cleanup:
+    - Apply dictionary to correct Country Names in GDP table to be the same as Country Names in Exchange table
+    - Split Currency and Country into two columns
+    - Convert Nan to 0
+    - Merge Exchange and GDP "inner" on Country
+    - Convert Effective Date to YYYYMMDD
+    - Add column for Effective Year
+- Save DataFrame to /Resources/result_files/step1_build_exchange_gdp_sorted_df.csv 
+
+jupyter notebook: step2_reformat_datafor analysis.ipynb
+- step1_build_exchange_gdp_sorted_df.csv is input to Step2
+- Melt the dataframe to convert year columns into rows and align them with the 'Year' column
+- Filter rows where 'Year' matches 'Year_temp'
+-  Drop the 'Year_temp' column
+- Reorder columns
+- Save converted DataFrame to Resources/result_files/step2_reformat_data_for_analysis.csv
+
+jupyter notebook: step3.ipynb
+- 
 - 
 
--
+jupyter notebook: step4.ipynb
 - 
 
-step2_reformat_datafor analysis.ipynb
-- 
-
-step3.ipynb
+jupyter notebook: step5.ipynb
 - 
 - 
-- 
-o	
-o	
-- 
-- 
-
-step4.ipynb
-- 
-
-step5.ipynb
-- 
-- 
-step6.ipynb
+jupyter notebook: step6.ipynb
 - 
 
 # Options for the future
