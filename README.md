@@ -1,4 +1,12 @@
-# Project_2
+## Project Team
+ - Thomas Brown
+ - Robb Stenman
+ - Jed Murphy
+
+## Project 2 Instructions / Directions
+
+- Instructions for [project 2](https://bootcampspot.instructure.com/courses/5432/pages/16-project-2-overview?module_item_id=1201087) provided by the course instructors.
+
 For Project 2, you will work with your group to solve, analyze, or visualize a problem using machine learning (ML), along with the other technologies you’ve learned so far. Here are the specific requirements:
 
 Find a problem worth solving, analyzing, or visualizing.
@@ -14,102 +22,73 @@ Pandas plotting
 Prophet
 Python
 Time series analysis
-For this project, you can focus your efforts within a specific industry, as detailed in the following examples.
+For this project, you can focus your efforts within a specific industry, as detailed in the following examp
 
-Finance
-Create an algorithm that analyzes credit scores and predicts consumer personal-loan eligibility.
+## Project Ideation: 
+The team explored several ideas, ultimately choosing to Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GNP). 
 
-Using natural language processing, create a chatbot to perform simple tasks and help users find information.
+## Project Files:
+[Data Source for US Treasury Exchange Rate Reporting](https://fiscaldata.treasury.gov/datasets/treasury-reporting-rates-exchange/treasury-reporting-rates-of-exchange#dataset-properties) 
 
-Train an algorithm to analyze consumer spending and predict trends.
+[Data Source for World Bank Gross National Product](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
 
-Train an image classifier to assess property value, which could then be used to calculate insurance quotes.
 
-Healthcare
-Train an algorithm to recognize disease symptoms and predict if a patient is at risk.
+### Important information about the DU-Project-2 Repository
 
-Train an image classifier to recognize anomalies, such as suspicious vs healthy areas of skin.
+No issues at this time.
 
-Using natural language processing, create a chatbot that will help connect patients with doctors.
 
-Create an algorithm to analyze patient history and predict the likelihood of inherited illness.
+## Project Summary
 
-Custom
-We’ve only specified healthcare and finance, but any industry can benefit from machine learning. Consider preparing a data deep dive or infrastructure review that shows machine learning in the context of what we’ve already learned.
+Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GNP). 
 
-Create a front-end interface that maps to an API to “smarten” the algorithm.
 
-Perform a deep dive on existing data using machine learning.
+## Questions, Analysis and Summary
+### Goal 
 
-Create a visualization that continues to learn where clusters lie based on ML (use Leaflet or Plotly to change the visualization).
+Goal:  Analyze Exchange Rates for 10 countries and assess correlation to Gross Domestic Product.
 
-Create an idea using mock data, and simulate how machine learning might be used.
+Are the exchange rates for a Country a good predictor of annual GNP for that country?
+How closely correlated are exchange rates and GNP for a country?
 
-Create an analysis of existing data to make a prediction, classification, or regression.
 
-Working with Your Group
-When working on an online group project, it’s crucial to meet with your group and communicate regularly. Plan for significant collaboration time outside of class. The following tips can help you make the most of your time:
+###	Question 1:  Are the exchange rates for a Country a good predictor of annual GNP for that country?
 
-Decide how you’re going to communicate with your group members when you begin. Create a Slack channel, exchange phone numbers, and ensure that the group knows each group member’s available working hours.
+### Question 2:  How closely correlated are exchange rates and GNP for a country?
 
-Set up an agile project by using GitHub ProjectsLinks to an external site. so that your group can track tasks.
 
-Create internal milestones to ensure that your group is on track. Set due dates for these milestones so that you have a timeline for completing the project. Some of these milestones might include:
+## Analysis Approach
 
-Project ideation;
+The analysis was broken into multiple steps.
 
-Data fetching;
 
-Data exploration;
+step1_build_base_data.ipynb
+- 
 
-Data transformation;
+-
+- 
 
-Data analysis;
+step2_reformat_datafor analysis.ipynb
+- 
 
-Testing;
+step3.ipynb
+- 
+- 
+- 
+o	
+o	
+- 
+- 
 
-Creating documentation; and
+step4.ipynb
+- 
 
-Creating the presentation.
+step5.ipynb
+- 
+- 
+step6.ipynb
+- 
 
-Since this is a two-week project, make sure that you have completed at least half of your project by the end of the first week in order to stay on track.
+# Options for the future
 
-Although you will divide the work among the group members, it’s essential to collaborate and communicate while working on different parts of the project. Be sure to check in with your teammates regularly and offer support.
 
-Support and Resources
-Your instructional team will provide support during classes and office hours. You will also have access to learning assistants and tutors to help you with topics as needed. Make sure to take advantage of these resources as you collaborate with your group on this project.
-
-Requirements
-Data Model Implementation (25 points)
-There is a Jupyter notebook that thoroughly describes the data extraction, cleaning, and transformation process, and the cleaned data is exported as CSV files for the machine learning model. (10 points)
-
-A Python script initializes, trains, and evaluates a model or loads a pretrained model. (10 points)
-
-The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared. (5 points)
-
-Data Model Optimization (25 points)
-The model optimization and evaluation process showing iterative changes made to the model and the resulting changes in model performance is documented in either a CSV/Excel table or in the Python script itself. (15 points)
-
-Overall model performance is printed or displayed at the end of the script. (10 points)
-
-GitHub Documentation (25 points)
-GitHub repository is free of unnecessary files and folders and has an appropriate .gitignore in use. (10 points)
-
-The README is customized as a polished presentation of the content of the project. (15 points)
-
-Presentation Requirements (25 points)
-Your presentation should cover the following:
-
-An executive summary or overview of the project and project goals. (5 points)
-
-An overview of the data collection, cleanup, and exploration processes. Include a description of how you evaluated the trained model(s) using testing data. (5 points)
-
-The approach that your group took in achieving the project goals. (5 points)
-
-Any additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development. (3 points)
-
-The results and conclusions of the application or analysis. (3 points)
-
-Slides effectively demonstrate the project. (2 points)
-
-Slides are visually clean and professional. (2 points)
