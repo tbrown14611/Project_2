@@ -22,7 +22,6 @@ Pandas plotting
 Prophet
 Python
 Time series analysis
-For this project, you can focus your efforts within a specific industry, as detailed in the following examp
 
 ## Project Ideation: 
 The team explored several ideas, ultimately choosing to Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GNP). 
