@@ -80,19 +80,19 @@ jupyter notebook: step2_reformat_datafor analysis.ipynb
 - Reorder columns
 - Save converted DataFrame to Resources/result_files/step2_reformat_data_for_analysis.csv
 
-jupyter notebook: step3.ipynb
-- 
-- 
+jupyter notebook: step3_analyze_data.ipynb
+- step2_reformat_data_for_analysis.csv is input to Step3
+- Filter for one contry if needed
+- Update Country Code to the ISO numeric value
+- Write Updated dataframe and change Country Code to data type int.
+- Perform Ridge Regesion.
+- Compare Ridge with Linear Regression
+- Compute Lasso Regression and compare it with Ridge and Linear Regression
+- Calculate mean squared error (MSE).
+- Calculate R-squared (R2)
 
-jupyter notebook: step4.ipynb
-- 
 
-jupyter notebook: step5.ipynb
-- 
-- 
-jupyter notebook: step6.ipynb
-- 
 
-# Options for the future
+
 
 
