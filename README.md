@@ -61,15 +61,30 @@ Goals:
     o Analyze Exchange Rates for 10 countries and access correlation to GDP Growth.
     o Analyze all 11,762 Exchange Rates for all countries and access correlation to GDP Growth.
     o The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
-
-Are the exchange rates for a Country a good predictor of annual GDP Growth for that Country?
-How closely correlated are exchange rates and GDP Growth for a country?
+    o Are the exchange rates for a Country a good predictor of annual GDP Growth for that Country?
+    o How closely correlated are exchange rates and GDP Growth for a country?
 
 
 ###	Question 1:  Are the exchange rates for a Country a good predictor of annual GNP for that country?
+R-squared is used as a measure of fit, or accuracy of the model, but what it actually tells you is about variance.
+Our overall R-squared below indicates the Random Forest Regressor model is a good fit.
+Training (R2) Score: 0.9764628099591433
+Testing (R2) Score: 0.8799472692666176
 
-### Question 2:  How closely correlated are exchange rates and GNP for a country?
+### Question 2:  How closely correlated are exchange rates and GDP Growth for a country?
 
+Pearson Correlation: -0.03759903238661448  (weak)
+Exchange Rates and GDP Growth are negitively correlated. As Exchange Reates go up, GDP Growth goes down.
+Pearson is a liner correlation measure, Random Forest Feature Importance should be use for this measure. 
+
+Random Forest Feature importance refers to techniques that calculate a score for all the input features for a given model.
+The scores represent the “importance” of each feature.
+A higher score means that the specific feature will have a larger effect on the model that is being used to predict a certain variable.
+Random Forest Feature Importance measurement:
+Exchange Rate     0.391174
+Effective Date    0.299577
+Country Code      0.309249
+Exchange Rate is the most "important" and has the larger effect on the model to predict GDP Growth.
 
 ## Analysis Approach
 
