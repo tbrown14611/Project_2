@@ -121,7 +121,7 @@ performance improvement noted.
 - Reorder columns
 - Save converted DataFrame to Resources/result_files/step2_reformat_data_for_analysis.csv
 
-### Jupyter notebook: step3_analyze_data.ipynb Duration: 0:00:02.840518
+### Jupyter notebook: step3_analyze_data.ipynb Duration: 0:00:05.307291
 
 - step2_reformat_data_for_analysis.csv is input to Step3
 - Filter for one contry if needed
@@ -138,6 +138,12 @@ performance improvement noted.
 The analysis proved that the Random Forest Regressor produces the best R2 R-squared. 
 Performance will be improved when the models that are run are reduced to include only 
 the Random Forest Regressor model. 
+
+ ## Performance adjustment measurements (1.2 second improvement)
+ 
+ - Before Adjustment Duration: 0:00:05.307291
+ - After Adjustment Duration:  0:00:04.185599
+
 
 ## Result/Conclusion
 
