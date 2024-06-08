@@ -84,7 +84,7 @@ Random Forest Feature Importance measurement:
 - Exchange Rate     0.391174
 - Effective Date    0.299577
 - Country Code      0.309249
-Exchange Rate is the most "important" and has the larger effect on the model to predict GDP Growth.
+- Exchange Rate is the most "important" and has the larger effect on the model to predict GDP Growth.
 
 ## Analysis Approach
 
