@@ -24,7 +24,7 @@ For Project 2, you will work with your group to solve, analyze, or visualize a p
  - Time series analysis
 
 ## Project Ideation: 
-The team explored several ideas, ultimately choosing to Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GNP). 
+The team explored several ideas, ultimately choosing to Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GDP Growth). 
 
 ## Project Files:
 [Data Source for US Treasury Exchange Rate Reporting](https://fiscaldata.treasury.gov/datasets/treasury-reporting-rates-exchange/treasury-reporting-rates-of-exchange#dataset-properties) 
@@ -39,7 +39,7 @@ The team explored several ideas, ultimately choosing to Analyze selected Country
 
 ## Project Summary
 
-Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GNP). 
+Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GDP Growth). 
 
 - Project Milestones:	
     - Project ideation – Complete 5/27
@@ -65,7 +65,7 @@ GitHub repository is free of unnecessary files and folders and has an appropriat
  - How closely correlated are exchange rates and GDP Growth for a country?
 
 
-###	Question 1:  Are the exchange rates for a Country a good predictor of annual GNP for that country?
+###	Question 1:  Are the exchange rates for a Country a good predictor of annual GDP Growth for that country?
 - R-squared is used as a measure of fit, or accuracy of the model, but what it actually tells you is about variance.
 - Our overall R-squared below indicates the Random Forest Regressor model is a good fit.
 - Training (R2) Score: 0.9764628099591433
@@ -104,10 +104,10 @@ performance improvement noted.
 
 - Us Treasury and World bank data, downloaded and saved as .csv files in project Resources are input to Step1
 - Cleanup:
-    - Apply dictionary to correct Country Names in GDP table to be the same as Country Names in Exchange table
+    - Apply dictionary to correct Country Names in GDP Growth table to be the same as Country Names in Exchange table
     - Split Currency and Country into two columns
     - Convert Nan to 0
-    - Merge Exchange and GDP "inner" on Country
+    - Merge Exchange and GDP Growth "inner" on Country
     - Convert Effective Date to YYYYMMDD
     - Add column for Effective Year
 - Save DataFrame to /Resources/result_files/step1_build_exchange_gdp_sorted_df.csv 
