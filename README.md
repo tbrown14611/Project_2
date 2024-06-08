@@ -41,14 +41,29 @@ No issues at this time.
 
 Analyze selected Country Exchange Rates and the relationship to their Gross Domestic Product (GNP). 
 
+Project Milestones:
+Project ideation – Complete 5/27
+Data fetching – Complete 5/27
+Data exploration – Complete 5/30
+Data transformation – Complete 6/3
+Data analysis – Complete 6/6
+Testing – Complete 6/10
+Creating documentation – Complete 6/10
+Creating the presentation – Complete 6/10
+
+GitHub repository is free of unnecessary files and folders and has an appropriate .gitignore in use.
+
 
 ## Questions, Analysis and Summary
 ### Goal 
 
-Goal:  Analyze Exchange Rates for 10 countries and assess correlation to Gross Domestic Product.
+Goals: 
+    o Analyze Exchange Rates for 10 countries and access correlation to GDP Growth.
+    o Analyze all 11,762 Exchange Rates for all countries and access correlation to GDP Growth.
+    o The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
 
-Are the exchange rates for a Country a good predictor of annual GNP for that country?
-How closely correlated are exchange rates and GNP for a country?
+Are the exchange rates for a Country a good predictor of annual GDP Growth for that Country?
+How closely correlated are exchange rates and GDP Growth for a country?
 
 
 ###	Question 1:  Are the exchange rates for a Country a good predictor of annual GNP for that country?
@@ -58,10 +73,22 @@ How closely correlated are exchange rates and GNP for a country?
 
 ## Analysis Approach
 
-The analysis was broken into multiple steps with a jupyter notebook for each step.
+The analysis was broken into multiple steps with a Jupyter notebook for each step.
+    Step1_build_base_data.ipynb
+    Step2_reformat_data_for_analysis
+    Step3_analyze_data
 
+    Step duration is calculated (see Duration in each step detail below)
 
-jupyter notebook: step1_build_base_data.ipynb
+The analysis proved that the Random Forest Regressor produces the best R2 R-squared. 
+Performance will be improved when the models that are run are reduced to include 
+only the Random Forest Regressor model. Duration for step 3 will be updated and the
+performance improvement noted.
+
+Jupyter notebook: step1_build_base_data.ipynb
+
+ Duration: 0:00:02.035045
+
 - Us Treasury and World bank data, downloaded and saved as .csv files in project Resources are input to Step1
 - Cleanup:
     - Apply dictionary to correct Country Names in GDP table to be the same as Country Names in Exchange table
@@ -72,7 +99,10 @@ jupyter notebook: step1_build_base_data.ipynb
     - Add column for Effective Year
 - Save DataFrame to /Resources/result_files/step1_build_exchange_gdp_sorted_df.csv 
 
-jupyter notebook: step2_reformat_datafor analysis.ipynb
+Jupyter notebook: step2_reformat_data_for_analysis.ipynb
+
+Duration: 0:00:00.305458
+
 - step1_build_exchange_gdp_sorted_df.csv is input to Step2
 - Melt the dataframe to convert year columns into rows and align them with the 'Year' column
 - Filter rows where 'Year' matches 'Year_temp'
@@ -80,7 +110,10 @@ jupyter notebook: step2_reformat_datafor analysis.ipynb
 - Reorder columns
 - Save converted DataFrame to Resources/result_files/step2_reformat_data_for_analysis.csv
 
-jupyter notebook: step3_analyze_data.ipynb
+Jupyter notebook: step3_analyze_data.ipynb
+
+Duration: 0:00:02.840518
+
 - step2_reformat_data_for_analysis.csv is input to Step3
 - Filter for one contry if needed
 - Update Country Code to the ISO numeric value
@@ -90,6 +123,12 @@ jupyter notebook: step3_analyze_data.ipynb
 - Compute Lasso Regression and compare it with Ridge and Linear Regression
 - Calculate mean squared error (MSE).
 - Calculate R-squared (R2)
+- Random Forest Regressor 
+
+
+The analysis proved that the Random Forest Regressor produces the best R2 R-squared. 
+Performance will be improved when the models that are run are reduced to include only 
+the Random Forest Regressor model. 
 
 
 
