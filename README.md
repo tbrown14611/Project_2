@@ -34,7 +34,13 @@ The team explored several ideas, ultimately choosing to Analyze selected Country
 
 ## Important information about the DU-Project-2 Repository
 
+## Data Cleanup Issues
 
+The data from the The Department of the Treasury and the Bureau of the Fiscal Service, GDP Growth, was relatively clean and consistent. For our purposes, we needed to be aware that the data included regions and categories, such as East Asia & Pacific and OECD members, respectively. These were automatically removed since we used the inner join function when combining data sets, so it did not cause any issues.
+
+The data from the World Bank had several inconsistencies. Sometimes the same countries were listed in all Upper Case and sometimes in Title Case. There were several instances where the same country's name was spelled different ways (eg. Azerbaijan and Azerbaidjan).
+
+Several countries had multiple currencies listed. In some cases, the multiple currency listings referred to the same currency but expressed in different ways. For example, the United Kingdom "Pound" and "Pound Sterling" both refer to the currency of the United Kingdom, just phrased differently. Some countries underwent a currency change during the time period covered by the data. In this situation, the old and new currencies would both be listed.
 
 
 ## Project Summary
