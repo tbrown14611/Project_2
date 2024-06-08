@@ -74,7 +74,7 @@ Testing (R2) Score: 0.8799472692666176
 ### Question 2:  How closely correlated are exchange rates and GDP Growth for a country?
 
 Pearson Correlation: -0.03759903238661448  (weak)
-Exchange Rates and GDP Growth are negitively correlated. As Exchange Reates go up, GDP Growth goes down.
+Exchange Rates and GDP Growth are negatively correlated. As Exchange Rates go up, GDP Growth goes down.
 Pearson is a liner correlation measure, Random Forest Feature Importance should be use for this measure. 
 
 Random Forest Feature importance refers to techniques that calculate a score for all the input features for a given model.
@@ -133,7 +133,7 @@ Duration: 0:00:02.840518
 - Filter for one contry if needed
 - Update Country Code to the ISO numeric value
 - Write Updated dataframe and change Country Code to data type int.
-- Perform Ridge Regesion.
+- Perform Ridge Regession.
 - Compare Ridge with Linear Regression
 - Compute Lasso Regression and compare it with Ridge and Linear Regression
 - Calculate mean squared error (MSE).
@@ -148,6 +148,8 @@ the Random Forest Regressor model.
 ## Result/Conclusion
 
 ![alt text](image-2.png)
+
+![alt text](image-5.png)
 
 
 
