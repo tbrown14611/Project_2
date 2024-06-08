@@ -145,7 +145,9 @@ The analysis proved that the Random Forest Regressor produces the best R2 R-squa
 Performance will be improved when the models that are run are reduced to include only 
 the Random Forest Regressor model. 
 
+## Result/Conclusion
 
+![alt text](image-2.png)
 
 
 
