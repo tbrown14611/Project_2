@@ -1,4 +1,4 @@
-## Project Team
+GDP## Project Team
  - Thomas Brown
  - Robb Stenman
  - Jed Murphy
@@ -64,8 +64,8 @@ GitHub repository is free of unnecessary files and folders and has an appropriat
 ### Goal 
 
 -Goals: 
- - Analyze Exchange Rates for 10 countries and access correlation to GDP Growth.
- - Analyze all 11,762 Exchange Rates for all countries and access correlation to GDP Growth.
+ - Analyze Exchange Rates for 10 countries and correlation to GDP Growth.
+ - Analyze all 11,762 Exchange Rates for all countries and correlation to GDP Growth.
  - The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
  - Are the exchange rates for a Country a good predictor of annual GDP Growth for that Country?
  - How closely correlated are exchange rates and GDP Growth for a country?
